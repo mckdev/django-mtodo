@@ -1,0 +1,10 @@
+*.pyc
+*~
+__pycache__/
+*.sqlite3
+/static
+.DS_Store
+geckodriver.log
+.fuse_hidden*
+.idea/
+/media/*

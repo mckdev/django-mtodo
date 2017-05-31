@@ -1,0 +1,40 @@
+li.todoItem {
+	line-height: 30px;
+}
+
+.completed {
+	color: #3c763d;
+	background-color: #dff0d8 !important;
+	border-color: #d6e9c6 !important;
+}
+
+.deleteButton, .editButton, .saveButton, .cancelButton, .completeButton {
+	float: right;
+	margin: 0 2px;
+}
+
+button {
+}
+
+#toggleAllButton {
+	margin: 0 auto;	
+}
+
+#addTodoButton {
+	margin-left: 10px;
+}
+
+input#addTodoTextInput.form-control {
+	width: 70%;
+	float:left;
+	font-size:1.5em;
+	padding:10px;
+}
+
+input#changeTodoTextInput.form-control {
+	width: 70%;
+	padding:10px;
+	margin-left:-11px;
+	margin-top:-2px;
+	display: inline;
+}

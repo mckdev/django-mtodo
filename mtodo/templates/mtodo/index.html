@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>django-mtodo</title>
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+    <div class="header clearfix">
+      <nav>
+      	<!-- Navigation goes here -->
+      </nav>
+      <h3 class="text-muted">django-mtodo v1</h3>
+    </div>
+		
+		<div>
+			<div class="clearfix">
+				<form action="" method="post">
+					{% csrf_token %}
+					<input id="addTodoTextInput" type="text" class="form-control" placeholder="Todo text...">
+					<button type="button" id="addTodoButton" class="btn btn-default" onclick="handlers.addTodo()">Add Todo</button>
+				</form>
+			</div>
+			<hr>
+			<div>
+				<form action="" method="post">
+					{% csrf_token %}
+				<ul class="list-group">
+
+
+
+				</ul>
+				</form>
+			</div>
+			<div class="text-center">
+				<button class="btn btn-default" onclick="handlers.toggleAll()">* complete all *</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="{% static 'client.js' %}"></script>
+
+</body>
+</html>
